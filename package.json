@@ -1,0 +1,23 @@
+{
+  "name": "ng-test-task",
+  "version": "1.0.0",
+  "description": "* [Getting Started](#getting-started)",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhayrathore86/ng-test-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhayrathore86/ng-test-task/issues"
+  },
+  "homepage": "https://github.com/abhayrathore86/ng-test-task#readme"
+}

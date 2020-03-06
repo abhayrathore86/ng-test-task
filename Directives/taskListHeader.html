@@ -1,0 +1,27 @@
+<form name="taskForm">
+    <div class="task-board-wrap">
+        <div class="task-board-img">
+            <img src="../Assets/Images/title.png" alt="title" />
+        </div>
+        <div class="paper-input-wrap">
+            <div class="flex-box">
+                <div class="flex-2">Task name</div>
+                <div class="flex-10"><input type="text" ng-model="taskName" required></div>
+            </div>
+            <div class="flex-box">
+                <div class="flex-2">Task date</div>
+                <div class="flex-10"><input type="date" ng-model="taskDate" required></div>
+            </div>
+            <div class="flex-box">
+                <div class="flex-2">Task description</div>
+                <div class="flex-10">
+                    <textarea ng-model="taskDescription" required>
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="task-board-wrap">
+        <button type="submit" ng-disabled="taskForm.$invalid" ng-click="addTask()" value="Add">Submit</button>
+    </div>
+</form>

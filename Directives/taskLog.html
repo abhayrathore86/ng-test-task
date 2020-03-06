@@ -1,0 +1,19 @@
+<div class="event-wrap">
+    <div class="event-block">
+        <div class="flex-row Log-header">
+            <div class="Log-row-item">Event</div>
+            <div class="Log-row-item">Task name</div>
+            <div class="Log-row-item">Time</div>
+        </div>
+        <div class="row-collection">
+            <div class="Log-row" ng-if="taskLog.length != 0" ng-repeat="log in taskLog track by $index">
+                <div class="Log-row-item" data-header="Event">{{log.event}}</div>
+                <div class="Log-row-item" data-header="Task name">{{log.taskName}}</div>
+                <div class="Log-row-item" data-header="Time">{{log.time | date: 'dd-MM-yyyy'}}</div>
+            </div>
+            <div class="Log-row" ng-if="taskLog.length == 0">
+                <div class="no-data-wrap" data-header="Country">No Log</div>
+            </div>
+        </div>
+    </div>
+</div>

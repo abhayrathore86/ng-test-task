@@ -1,0 +1,14 @@
+<div class="tasklist-wrap">
+    <div class="tasklist" ng-repeat="task in taskList track by $index">
+        <div class="flex-text text-bold"><span>Name</span>
+            <p title="{{task.taskName}}">{{task.taskName}}</p>
+        </div>
+        <div class="flex-text text-bold"><span>Date</span>
+            <p>{{task.taskDate | date: 'dd-MM-yyyy'}}</p>
+        </div>
+        <p class="text-scroll" title="{{task.taskDescription}}">
+            {{task.taskDescription}}
+        </p>
+        <div class="close-btn" ng-click="deleteTask($index, task)"><a>X</a></div>
+    </div>
+</div>
