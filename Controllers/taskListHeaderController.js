@@ -26,7 +26,7 @@ myApp.controller('taskListHeaderController', ['$scope', '$rootScope', function (
         $scope.taskLog.push({
             "event": "ADD",
             "taskName": $scope.taskName,
-            "time": new Date().toLocaleDateString()
+            "time": $scope.taskDate
         })
 
         $rootScope.tempLogList = $scope.taskLog;
